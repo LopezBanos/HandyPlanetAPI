@@ -19,14 +19,14 @@ def handy_order_request(request_name, item_type, item_ids, bundle, delivery, too
 
     return request
 
-def handy_search_request(api_key, item_types, filter):
+def handy_search_request(API_KEY, ITEM_TYPE, filter):
     search_request = {
-            "item_types" : [item_types],
+            "item_types" : [ITEM_TYPE],
             "filter"     : filter   
             }
 
     search_result = requests.post('https://api.planet.com/data/v1/quick-search',
-                                    auth=HTTPBasicAuth(api_key, ''),
+                                    auth=HTTPBasicAuth(API_KEY, ''),
                                     json=search_request)
     geojson = search_result.json()
     image_ids = [feature['id'] for feature in geojson['features']]
