@@ -1,13 +1,3 @@
----
-title: Planet Python API - The handy way of connecting with it'
-date: 2023-12-11
-permalink: /posts/2012/08/blog-post-1/
-bibliography: references.bib  
-tags:
-  - Python
-  - Planet
-  - API
----
 # What is Planet Python API?
 Planet Python API allows a user to access satellite data, work with it and 
 code data pipelines. I found it quite interesting if you want to download a 
